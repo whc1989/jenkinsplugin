@@ -1,0 +1,55 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <!--
+    Creates a text field that shows the value of the "name" property.
+    When submitted, it will be passed to the corresponding constructor parameter.
+  -->
+  
+  <f:block>
+    <table>
+      <f:optionalBlock title="IOS 兼容性测试" name="ios" checked="${instance.iosChecked}">
+        <f:entry title="任务名称" >
+          <f:textbox name="iosTaskName" value="${instance.iosTaskName}"/>
+        </f:entry>
+        <f:entry title="APP路径" >
+          <f:textbox name="iosPath" value="${instance.iosPath}"/>
+        </f:entry>
+      </f:optionalBlock>
+    </table>
+  </f:block>
+  <f:entry title="选择ios机型" field="chooseIosDevice">
+    <select name="chooseIosDevice">       
+        <f:option value="c6447a7b2e7c9828e998b1c56f2d3a962db4cf52" selected="${instance.chooseIosDevice=='c6447a7b2e7c9828e998b1c56f2d3a962db4cf52'}">iphone6</f:option>
+        <f:option value="3f735327d5767dcd1633f004737936713204992d" selected="${instance.chooseIosDevice=='3f735327d5767dcd1633f004737936713204992d'}">iphone6plus</f:option>
+    </select>
+  </f:entry>
+  <f:block>
+    <table>
+      <f:optionalBlock title="Android 兼容性测试" name="android" checked="${instance.androidChecked}">
+        <f:entry title="任务名称" >
+          <f:textbox name="androidTaskName" value="${instance.androidTaskName}"/>
+        </f:entry>
+        <f:entry title="APK路径" >
+          <f:textbox name="androidPath" value="${instance.androidPath}"/>
+        </f:entry>
+      </f:optionalBlock>
+    </table>
+  </f:block>
+  <f:entry title="选择android机型" field="chooseAndroidDevice">
+    <select name="chooseAndroidDevice">
+        <f:option value="5LM0216304000377" selected="${instance.chooseAndroidDevice=='5LM0216304000377'}">华为Mate8</f:option>
+        <f:option value="HC614YHE0116" selected="${instance.chooseAndroidDevice=='HC614YHE0116'}">HTC E9pw</f:option>
+        <f:option value="UO8TG6M799999999" selected="${instance.chooseAndroidDevice=='UO8TG6M799999999'}">OPPO R9</f:option>
+        <f:option value="WTKDU16905010628" selected="${instance.chooseAndroidDevice=='WTKDU16905010628'}">荣耀8</f:option>
+        <f:option value="25ccf417" selected="${instance.chooseAndroidDevice=='25ccf417'}">Vivo X7</f:option>
+        <f:option value="M95QACPCLX7C2" selected="${instance.chooseAndroidDevice=='M95QACPCLX7C2'}">魅族mx6</f:option>
+        <f:option value="aeb0e21a" selected="${instance.chooseAndroidDevice=='aeb0e21a'}">小米5</f:option>
+    </select>
+  </f:entry>
+</j:jelly>

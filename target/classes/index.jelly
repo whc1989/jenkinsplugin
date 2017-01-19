@@ -1,0 +1,7 @@
+<?jelly escape-by-default='true'?>
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  This plugin will help you create a quickly Compatibility Test in EMQC(http://172.16.96.146:8081/bootstrapem).
+</div>

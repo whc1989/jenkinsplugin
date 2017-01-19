@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Group-Id: com.emqc.jenkins
+Short-Name: emqcplugin
+Long-Name: TODO Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-12/02/2016 14:37-Administrator)
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Developers: 
+Libraries: D:\emqcplugin\src\main\resources,D:\emqcplugin\target\class
+ es,C:\Users\Administrator\.m2\repository\org\json\json\20151123\json-
+ 20151123.jar,C:\Users\Administrator\.m2\repository\commons-codec\comm
+ ons-codec\1.6\commons-codec-1.6.jar,C:\Users\Administrator\.m2\reposi
+ tory\org\apache\httpcomponents\httpmime\4.2.6\httpmime-4.2.6.jar,C:\U
+ sers\Administrator\.m2\repository\org\apache\httpcomponents\httpclien
+ t\4.2.6\httpclient-4.2.6.jar,C:\Users\Administrator\.m2\repository\or
+ g\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar
+Resource-Path: D:\emqcplugin\src\main\webapp
+
