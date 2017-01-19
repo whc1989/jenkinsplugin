@@ -1,0 +1,67 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <!--
+    Creates a text field that shows the value of the "name" property.
+    When submitted, it will be passed to the corresponding constructor parameter.
+  -->
+  
+  <f:block>
+    <table>
+      <f:optionalBlock title="IOS 兼容性测试" name="ios" checked="${instance.iosChecked}">
+        <f:entry title="任务名称" >
+          <f:textbox name="iosTaskName" value="${instance.iosTaskName}"/>
+        </f:entry>
+        <f:entry title="APP路径" >
+          <f:textbox name="iosPath" value="${instance.iosPath}"/>
+        </f:entry>
+        <f:entry title="iphone6" field="selectediphone6" checked="${instance.selectediphone6}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="iphone6plus" field="selectediphone6plus" checked="${instance.selectediphone6plus}">
+       	  <f:checkbox/>
+   		</f:entry> 
+      </f:optionalBlock>
+    </table>
+  </f:block>
+
+  <f:block>
+    <table>
+      <f:optionalBlock title="Android 兼容性测试" name="android" checked="${instance.androidChecked}">
+        <f:entry title="任务名称" >
+          <f:textbox name="androidTaskName" value="${instance.androidTaskName}"/>
+        </f:entry>
+        <f:entry title="APK路径" >
+          <f:textbox name="androidPath" value="${instance.androidPath}"/>
+        </f:entry>
+        <f:entry title="华为Mate8" field="selectedhuaweimate8" checked="${instance.selectedhuaweimate8}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="HTC E9pw" field="selectedhtce9pw" checked="${instance.selectedhtce9pw}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="OPPO R9" field="selectedoppor9" checked="${instance.selectedoppor9}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="荣耀8" field="selectedhonour8" checked="${instance.selectedhonour8}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="Vivo X7" field="selectedvivox7" checked="${instance.selectedvivox7}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="魅族mx6" field="selectedmeizumx6" checked="${instance.selectedmeizumx6}">
+       	  <f:checkbox/>
+   		</f:entry> 
+   		<f:entry title="小米5" field="selectedmi5" checked="${instance.selectedmi5}">
+       	  <f:checkbox/>
+   		</f:entry>
+      </f:optionalBlock>
+    </table>
+  </f:block>
+ 
+</j:jelly>

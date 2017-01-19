@@ -1,0 +1,10 @@
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder$EnableTextBlock.class
+com\emqc\jenkins\emqcplugin\HttpRequest.class
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder\EnableTextBlock2.stapler
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder$DescriptorImpl.class
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder$EnableTextBlock2.class
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder\EnableTextBlock.stapler
+com\emqc\jenkins\emqcplugin\HttpPostUploadUtil.class
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder.class
+com\emqc\jenkins\emqcplugin\HelloWorldBuilder.stapler
+META-INF\annotations\hudson.Extension
